@@ -118,10 +118,10 @@ p#status {
 footer {
     width: 100%;
     padding: 10px 0;
-    color: #0964b0; /* Ensures text visibility */
+    color: #0964b0; 
     text-align: center;
-    font-size: 0.9rem; /* Slightly smaller font for the footer */
-    position: fixed; /* Ensures the footer sticks to the bottom */
+    font-size: 0.9rem; 
+    position: fixed; 
     bottom: 0;
     left: 0;
 }
