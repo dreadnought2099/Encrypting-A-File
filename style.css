@@ -12,6 +12,19 @@ body {
     color: #333;
 }
 
+#fileContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    gap: 20px;             
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 10px;            
+}
+
+
 h1 {
     font-size: 2rem;
     color: #0964b0;
@@ -29,7 +42,6 @@ input[type="file"]::file-selector-button {
     color: transparent;
 }
 
-/* Faked label styles and icon */
 input[type="file"]::before {
     position: absolute;
     pointer-events: none;
@@ -50,7 +62,6 @@ input[type="file"]::after {
     content: "Upload File";
 }
 
-/* file upload button */
 input[type="file"]::file-selector-button {
     border-radius: 4px;
     padding: 0 16px;
@@ -63,7 +74,6 @@ input[type="file"]::file-selector-button {
     transition: background-color 200ms, transform 100ms;
 }
 
-/* file upload button hover state */
 input[type="file"]::file-selector-button:hover {
     background-color: #f3f4f6;
 }
@@ -74,6 +84,7 @@ input[type="file"]::file-selector-button:active {
 }
 
 button {
+    box-sizing: border-box;
     padding: 10px 20px;
     margin: 0 10px;
     background-color: #0964b0;
@@ -87,7 +98,8 @@ button {
 }
 
 button:hover {
-    background-color: #075a9c;
+    background-color: white;
+    color: #0964b0;
 }
 
 button:active {
